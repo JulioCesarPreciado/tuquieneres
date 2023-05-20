@@ -7,8 +7,9 @@ images = []
 persons = []
 
 for path in os.listdir('./images/persons'):
-    images.append(cv2.imread(os.path.join('./images/persons',path)))
-    persons.append(os.path.splitext(path)[0])
+    if(os.path.splitext(path)[0] != '.DS_Store'):
+        images.append(cv2.imread(os.path.join('./images/persons',path)))
+        persons.append(os.path.splitext(path)[0])
     
 def findEncodings(images):
     encodes = []

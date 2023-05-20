@@ -39,7 +39,7 @@ while True:
     else:
         helper.remove(bg)
         helper.putText(bg,'No se que eres')
-        helper.putImage(bg,'./images/assets/' + helper.random(1,10) + '.png')
+        helper.putImage(bg,'./images/assets/' + helper.random(1,23) + '.png')
 
     height, width, channels = img.shape
 
